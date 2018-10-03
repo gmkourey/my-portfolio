@@ -22,6 +22,12 @@ $(".scrollcont").on("click", function () {
     $(".head-name").removeAttr("style");
     $(".subheading").removeAttr("style");
     }, 2000)
+    setTimeout(function() {
+        $(".resumeDiv").animate({top: "0px"}, 1000);
+    }, 2500)
+    setTimeout(function() {
+        $(".summarycontainer").animate({left: "0px"}, 1000);
+    }, 2000)
 });
 
 $(".scroll-up").on("click", function () {

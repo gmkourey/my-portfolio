@@ -84,6 +84,7 @@
 }
 .resumeDiv {
     position:relative;
+    top:100vh;
     padding-top: 20px;
     padding-bottom: 25px;
 }
@@ -102,6 +103,8 @@
 }
 .summarycontainer {
     padding-top: 35vh;
+    position:relative;
+    left: 100vw;
 }
 .subHeader {
     text-align:center;
