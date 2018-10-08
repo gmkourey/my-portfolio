@@ -1,41 +1,18 @@
-.jumbotron {
-    min-height: 200vh;
-    width:100%;
+.wrapper {
+    width: 100vw;
+    overflow:hidden;
     padding:0px;
     border-radius: 0px;
     margin-bottom:0px;
-}
-.homepage {
     background-image: linear-gradient(155deg,rgb(35, 95, 155), rgb(5, 108, 156), rgb(5, 108, 156),rgb(66, 176, 244));
 }
-.portpage {
-    background-image: linear-gradient(155deg,rgb(255, 140, 0), rgb(255, 165, 0), rgb(255, 215, 0));
-}
-.aboutmepage {
-    background-image: linear-gradient(155deg,rgb(0, 128, 0), rgb(0,190,0), rgb(0, 256, 0));
-}
-.navbar-nav {
-    margin:0 auto;
-    text-align:center;
-}
-.nav-link{
-    color:white !important;
-    margin-left:10px;
-    font-size: 20px;
-}
-.navbar-toggler {
-    border: none;
-}
-.nav-link:hover {
-    border-bottom: 2px solid white;
-    padding-bottom: 6px;
-}
-.firstdiv {
-    height: 100vh;
+.sectionDiv {
+    min-height: 100vh;
 }
 .head-name-div {
     position:relative;
-    margin-top: 85px;
+    top: 22vh;
+    width: 90vw;
 }
 .head-name {
     font-family: 'Courgette', cursive;
@@ -44,57 +21,16 @@
     transform: rotate(-15deg);
     text-align: center;
     text-shadow: 2px 2px 5px lightgrey;
-    position:absolute;
-}
-
-.heading {
-    font-size: 15vw;
-    position:absolute;
-
 }
 .subheading {
     font-size: 25px;
     color: white;
-    position: absolute;
     top: 375px;
     right: 0px;
+    position: absolute;
 }
-#scroll {
-    position:absolute;
-    height:20px;
-    width: 50px;
-    margin-left:-20px;
-}
-.scrollcont:hover {
-    cursor: pointer;
-}
-.scrollcont {
-    position:absolute;
-    bottom : 50px;
-    text-align:center;
-    width:100%;
-}
-.port-head {
-    left: -50px;
-}
-.secondDiv {
-    position:relative;
-    min-height:100vh;
-    padding-top: 0px;
-}
-.resumeDiv {
-    position:relative;
-    top:100vh;
-    padding-top: 20px;
-    padding-bottom: 25px;
-}
-.scroll-up {
-    transform: rotate(180deg);
-    height:20px;
-    width: 50px;
-    position:absolute;
-    right: 75px;
-    cursor: pointer;
+.card-grid {
+    left: 100vw;
 }
 .aboutText {
     color:white;
@@ -102,9 +38,9 @@
     padding-bottom: 25px;   
 }
 .summarycontainer {
-    padding-top: 35vh;
-    position:relative;
+    top: 32vh;
     left: 100vw;
+    position:relative;
 }
 .subHeader {
     text-align:center;
@@ -115,15 +51,12 @@
     margin-top: 0px;
 }
 .aboutText {
-    font-size: 20px;
+    font-size: 25px;
     text-align:center;
     margin-top: 25px;
 }
-.about-me-header {
-    left: 75px;
-}
 .resumecontainer {
-    margin-top: 20px;
+    padding-top: 100px;
     color: white;
 }
 .resumesection {
@@ -148,7 +81,7 @@
 }
 .posdates {
     text-align: right;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
 }
 .posdetail {
@@ -163,6 +96,7 @@
 }
 .portcontainer {
     padding-top: 50px;
+    text-align:center;
 }
 .portrow {
     text-align:center;
@@ -205,175 +139,155 @@
     margin-top: 12px;
 }
 
-@media (max-width: 1201px) {
-    .head-name {
-        font-size:11vw;
-        left: 0px;
-        top: 25px;
-    }
-    .subheading {
-        font-size: 2.2vw;
-        right: -65px;
-        top: 300px;
-    }
-    .summarycontainer {
-        position:absolute;
-        top: 18vw;
-        left: 0;
-        right:0;
-        margin:auto;
-        padding: 0px 25px;
-    }
-    .port-head {
-        left: -40px;
-        top: 25px;
-    }
-    .about-me-header {
-        left: 40px;
-        top: 50px;
-    }
-    .rotate {
-        display: block;
-    }
-}
-@media (max-width: 993px) {
+@media (max-width: 1367px) {
     .head-name-div {
-        margin-top: 15vh;
+        right: 50px;
     }
     .head-name {
-        font-size:13vw;
-        left: -40px;
-        top: 0px;
+        font-size: 13vw; 
     }
     .subheading {
-        font-size: 2.5vw;
-        right: -50px;
-        top: 160px;
+        font-size: 35px;
+        top: 425px;
+        right: -100px;
+    }
+    .subHeader {
+        font-size: 50px;
+    }
+    .aboutText {
+        font-size: 35px;
     }
     .summarycontainer {
-        padding-top: 22vw;
-        padding: 0px 25px;
-    }
-    .port-head {
-        left: -40px;
-        top: 300px;
-    }
-    .about-me-header {
-        left: -40px;
-        top: 0px;
-    }
-}
-@media (max-width: 769px) {
-    .head-name {
-        font-size:17vw;
-        left: -60px;
-        top: 20px;
-    }
-    .subheading {
-        font-size: 3vw;
-        right: -90px;
-        top: 350px;
-    }
-    .summarycontainer {
-        padding-top: 22vw;
-        padding: 20px 25px;
-    }
-    .port-head {
-        left: -125px;
-        top: 40px;
-    }
-    .about-me-header {
-        left: -20px;
-        top: 40px;
-    }
-    .posdates {
-        text-align:left;
-    }
-}
-@media (max-width: 700px) {
-    .head-name {
-        font-size:17vw;
-        left: -60px;
-        top: 50px;
-    }
-    .subheading {
-        font-size: 3vw;
-        right: -90px;
-        top: 135px;
-    }
-    .summarycontainer {
-        margin-top: 22vw;
-        padding: 0px 25px;
-    }
-    .port-head {
-        left: -40px;
-        top: 20px;
-    }
-    .about-me-header {
-        left: -40px;
-        top: 20px;
-    }
-    .posdates {
-        text-align:left;
-    }
-}
-@media (max-width: 577px) {
-    .head-name-div {
-        margin-top: 20vh;
-    }
-    .head-name {
-        font-size:20vw;
-        left: -50px;
-        top: -40px;
-    }
-    .subheading {
-        font-size: 4vw;
-        right: -70px;
-        top: 160px;
-    }
-    .summarycontainer {
-        margin-top: 0px;
-        padding: 0px 25px;
-    }
-    .port-head {
-        left: -75px;
-        top: -40px;
-    }
-    .about-me-header {
-        left: -30px;
-        bottom: 10px;
-    }
-    .scrollContainer {
-        display: none;
-    }
-    .firstdiv {
-        height: 90vh;
+        top: 23vh;
+        padding: 0px;
     }
 }
 
-@media (max-height: 500px) {
+@media (max-width: 1025px) and (max-height: 1367px) {
+    .head-name-div {
+        right: 80px;
+        top: 30vh;
+    }
     .head-name {
-        font-size:11vw;
-        right: -20px;
-        top: -55px;
+        font-size: 17vw; 
     }
     .subheading {
-        font-size: 2.5vw;
-        bottom: -150px;
-        right: -40px;
+        right: -200px;
     }
-    .port-head {
-        top: -30px;
-        left: -10px;
-    }
-    .about-me-header {
-        top: -25px;
-        left: 10px;
-    }
-    .scroll-up {
-        display: none;
-    }
-    .summarycontainer {
-        padding-top: 50px;
+    .aboutText {
+        padding: 0px 50px;
     }
 }
+
+@media (max-width: 1025px) and (max-height: 769px) {
+    .head-name-div {
+        right: 50px;
+        top: 22vh;
+    }
+    .head-name {
+        font-size: 14vw; 
+    }
+    .subheading {
+        font-size: 27px;
+        top: 350px;
+        right: -125px;
+    }
+    .subHeader {
+        font-size: 50px;
+    }
+    .aboutText {
+        font-size: 25px;
+    }
+    .summarycontainer {
+        top: 23vh;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 813px) and (max-height: 376px) {
+    .head-name-div {
+        right: 10px;
+        top: 15vh;
+    }
+    .head-name {
+        font-size: 10vw; 
+    }
+    .subheading {
+        font-size: 16px;
+        top: 200px;
+        right: 0px;
+    }
+    .subHeader {
+        font-size: 40px;
+    }
+    .summarycontainer {
+        top: 0;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 769px) {
+    .head-name-div {
+        right: 50px;
+        top: 26vh;
+    }
+    .head-name {
+        font-size: 16vw; 
+    }
+    .subheading {
+        font-size: 27px;
+        top: 320px;
+        right: -125px;
+    }
+    .summarycontainer {
+        top: 0;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 668px) {
+    .head-name-div {
+        right: 0px;
+        top: 16vh;
+    }
+    .head-name {
+        font-size: 12vw; 
+    }
+    .subheading {
+        font-size: 16px;
+        top: 200px;
+        right: -50px;
+    }
+    .aboutText {
+        font-size: 22px;
+        padding: 0px;
+    }
+    .summarycontainer {
+        top: 0;
+        padding: 0px;
+    }
+    .posdates {
+        text-align: left;
+    }
+}
+
+@media (max-width: 376px) {
+    .head-name-div {
+        right: 35px;
+        top: 30vh;
+    }
+    .subHeader {
+        font-size:40px;
+    }
+    .head-name {
+        font-size: 18vw; 
+    }
+    .aboutText {
+        padding: 0px 50px;
+    }
+    .subheading {
+        top: 175px;
+        right: -80px;
+    }
+}
+
