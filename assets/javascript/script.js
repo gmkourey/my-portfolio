@@ -4,7 +4,7 @@ document.addEventListener("scroll", function () {
 
     var topWindow = $(window).scrollTop();
 
-    //Slide in summary if top of screen is at 60% of vertical height
+    //Slide in summary if top of screen is at 50% of vertical height
     if(topWindow > (0.5 * windowHeight)) {
         $(".summarycontainer").animate({left: "0px"}, 1000);
     } 
@@ -31,8 +31,6 @@ document.addEventListener("scroll", function () {
         }, 1500)
     }
 });
-
-//If users do not click on the arrow, they can 
 
 //This is the "click to scroll" on the portfolio cards to notify users that they can click to flip
 $(".card-grid").hover(function() {
