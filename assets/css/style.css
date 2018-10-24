@@ -9,6 +9,12 @@
 .sectionDiv {
     min-height: 100vh;
 }
+.link {
+    color:white;
+}
+.link:hover {
+    color:green ;
+}
 .head-name-div {
     position:relative;
     top: 22vh;
@@ -116,6 +122,7 @@
 }
 .card-img-top {
     height: 160px;
+    border-bottom: 1px solid lightgrey;
 }
 .back {
     background-color:white;

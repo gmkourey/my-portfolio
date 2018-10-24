@@ -26,6 +26,9 @@ document.addEventListener("scroll", function () {
         setTimeout(function() {
             $(".card6").animate({left: "0px"}, 1000);
         }, 1250)
+        setTimeout(function() {
+            $(".card7").animate({left: "0px"}, 1000);
+        }, 1500)
     }
 });
 
