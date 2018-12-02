@@ -151,6 +151,9 @@
     padding-left: 12.5px;
     padding-bottom: 20px;
 }
+.card-text {
+    margin-bottom: 0px;
+}
 
 @media (max-width: 1367px) {
     .head-name-div {
