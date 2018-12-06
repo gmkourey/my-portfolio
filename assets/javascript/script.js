@@ -26,15 +26,10 @@ document.addEventListener("scroll", function () {
         setTimeout(function() {
             $(".card6").animate({left: "0px"}, 1000);
         }, 1250)
+        setTimeout(function() {
+            $(".card7").animate({left: "0px"}, 1000);
+        }, 1500)
     }
 });
-
-//This is the "click to scroll" on the portfolio cards to notify users that they can click to flip
-$(".card-grid").hover(function() {
-    $(".rotate").fadeIn();
-}, function() {
-    $(".rotate").fadeOut();
-}
-)
 
 $(".card-grid").flip({trigger: "click"});
