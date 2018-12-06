@@ -32,4 +32,30 @@ document.addEventListener("scroll", function () {
     }
 });
 
-$(".card-grid").flip({trigger: "click"});
+let target;
+let flipped = false;
+
+$(".card-grid").flip({
+    trigger: "manual"
+})
+
+$(".card-grid").on("click", function (event) {
+
+    if(event.currentTarget === target) {
+        target = event.currentTarget;
+        if(flipped === true) {
+            flipped = false;
+            $(event.currentTarget).flip(false);
+        } else {
+            flipped = true;
+            $(event.currentTarget).flip(true)
+        }
+
+    } else {
+        $(".card-grid").flip(false);
+        target = event.currentTarget;
+        flipped = true;
+        $(event.currentTarget).flip(true);
+    }
+})
+
